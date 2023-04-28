@@ -61,7 +61,7 @@ class _SignUpPageState extends State<SignUpPage> {
               controller: TextEditingController(),
             ), //Email
             CustomTextField(
-              hintText: 'PassWord',
+              hintText: 'Password',
               controller: TextEditingController(),
             ), //PassWord
             CustomTextField(

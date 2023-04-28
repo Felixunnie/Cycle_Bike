@@ -67,7 +67,7 @@ class _LoginPageState extends State<LoginPage> {
                 const Padding(
                   padding: EdgeInsets.symmetric(horizontal: 8, vertical: 16),
                   child: Text(
-                    "Dont have an account",
+                    "Don't have an account",
                     style: TextStyle(),
                   ),
                 ),
@@ -87,7 +87,7 @@ class _LoginPageState extends State<LoginPage> {
               ],
             ),
             const Text(
-              ' Or connect with ',
+              ' Or Connect with ',
               style: TextStyle(fontWeight: FontWeight.normal),
             ),
             Container(

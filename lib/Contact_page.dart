@@ -52,7 +52,7 @@ class ContactPage extends StatelessWidget {
                 ),
                 
                 Container(
-                  height: height * 0.5,
+                  height: 500,
                   width: width ,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(30),
@@ -172,7 +172,7 @@ class ContactPage extends StatelessWidget {
                   height: 30,
                 ),
                 Container(
-                  height: height * 0.4,
+                  height: 500,
                   width: width ,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(30),
