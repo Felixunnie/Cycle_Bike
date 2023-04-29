@@ -28,7 +28,7 @@ class _LoginPageState extends State<LoginPage> {
               child: Image.asset('assets/images/mfu_logo.png'),
             ), //<<<<<<<<<<<<<<<<<<<Logo
             const Text(
-              'Log In Now',
+              'Log In ',
               style: TextStyle(
                   color: Colors.red,
                   fontWeight: FontWeight.normal,
@@ -90,15 +90,31 @@ class _LoginPageState extends State<LoginPage> {
               ' Or Connect with ',
               style: TextStyle(fontWeight: FontWeight.normal),
             ),
-            Container(
-                height: 80.0,
-                width: 80.0,
-                alignment: Alignment.center,
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 8, vertical: 16),
-                child: const Image(
-                    image: NetworkImage(
-                        'https://img.icons8.com/color/512/google-logo.png'))),
+           Container(
+  height: 80.0,
+  width: 80.0,
+  alignment: Alignment.center,
+  padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 16),
+  child: Container(
+    height: 60.0,
+    width: 60.0,
+    decoration: BoxDecoration(
+      shape: BoxShape.circle,
+      color: Colors.grey.withOpacity(0.2),
+    ),
+    child: GestureDetector(
+      onTap: () {
+       // Handle onTap event here
+      },
+      child: const Image(
+        image: NetworkImage(
+          'https://img.icons8.com/color/512/google-logo.png',
+        ),
+      ),
+    ),
+  ),
+),
+
           ],
         ),
       ),

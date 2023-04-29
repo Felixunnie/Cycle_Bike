@@ -77,7 +77,7 @@ class _BikeInfoPage3State extends State<bike_info_page3> {
                             Padding(
                               padding: EdgeInsets.only(top: 8),
                               child: Text(
-                                'Electric Bike',
+                                'Classic Bike',
                                 style: TextStyle(
                                   fontSize: 12,
                                 ),
@@ -117,7 +117,7 @@ class _BikeInfoPage3State extends State<bike_info_page3> {
                               height: 8,
                             ),
                             Text(
-                              "50mil",
+                              "20mil",
                               style: TextStyle(fontSize: 18),
                             ),
                           ],
@@ -133,7 +133,7 @@ class _BikeInfoPage3State extends State<bike_info_page3> {
                               height: 8,
                             ),
                             Text(
-                              "75kmh",
+                              "25kmh",
                               style: TextStyle(fontSize: 18),
                             )
                           ],
@@ -149,7 +149,7 @@ class _BikeInfoPage3State extends State<bike_info_page3> {
                               height: 8,
                             ),
                             Text(
-                              "387wh",
+                              "100wh",
                               style: TextStyle(fontSize: 18),
                             ),
                           ],

@@ -14,7 +14,7 @@ class ProfilePage extends StatelessWidget {
       fit: StackFit.expand,
       children: [
         Container(
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             gradient: LinearGradient(
               colors: [
                 Color.fromRGBO(4, 9, 35, 1),
@@ -28,7 +28,7 @@ class ProfilePage extends StatelessWidget {
         Scaffold(
           backgroundColor: Colors.transparent,
           body: SingleChildScrollView(
-            padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 38),
+            padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 70),
             child: Column(
               children:[
                 Row(
@@ -36,22 +36,21 @@ class ProfilePage extends StatelessWidget {
                     children: [
                       IconButton(
                         alignment: Alignment.topLeft,
-                        icon: Icon(Icons.arrow_back, color: Colors.white,),
+                        icon: const Icon(Icons.arrow_back, color: Colors.white,),
                         onPressed: () {
                           Navigator.pop(context);
                         },
                       ),
                     ],
                   ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
-                
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
-                Container(
-                  height: height * 0.4,
+                SizedBox(
+                  height: height * 0.20,
                   child: LayoutBuilder(builder: (context, constraints){
                     double innerHeight = constraints.maxHeight;
                     double innerWidth = constraints.maxWidth;
@@ -63,27 +62,16 @@ class ProfilePage extends StatelessWidget {
                           left: 0,
                           right: 0,
                           child: Container(
-                            height: innerHeight * 0.65,
-                            width: innerWidth,
+                            height: innerHeight * 0.55,
+                            width: innerWidth ,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(30),
                               color: Colors.white,
                             ),
                             child: Column(
                               children: [
-                                SizedBox(
-                                  height: 70,
-                                ),
-                                Text(
-                                  'Chuming Lin',
-                                  style: TextStyle(
-                                    color: Color.fromRGBO(39, 105, 171, 1),
-                                    fontFamily: 'Nunito',
-                                    fontSize: 40,
-                                  ),
-                                ),
-                                SizedBox(
-                                  height: 10,
+                                const SizedBox(
+                                  height: 12,
                                 ),
                                 Column(
                                   children: [
@@ -99,7 +87,7 @@ class ProfilePage extends StatelessWidget {
                                             fontSize: 23,
                                           ),
                                         ),
-                                        Text(
+                                        const Text(
                                           '6431503116',
                                           style: TextStyle(
                                             color: Colors.black,
@@ -109,7 +97,7 @@ class ProfilePage extends StatelessWidget {
                                         ),
                                       ],
                                     ),
-                                    SizedBox(
+                                    const SizedBox(
                                       height: 17,
                                     ),
                                     Row(
@@ -124,7 +112,7 @@ class ProfilePage extends StatelessWidget {
                                             fontSize: 23,
                                           ),
                                         ),
-                                        Text(
+                                        const Text(
                                           'STUDENT CURRENT',
                                           style: TextStyle(
                                             color: Color.fromRGBO(8, 250, 36, 1),
@@ -140,31 +128,13 @@ class ProfilePage extends StatelessWidget {
                             ),
                           ),
                         ),
-                        Positioned(
-                          top: 0,
-                          left: 0,
-                          right: 0,
-                          child: Center(
-                            child: Container(
-                              margin: EdgeInsets.only(bottom: 10),
-                              height: 180,
-                              decoration: BoxDecoration(
-                                shape: BoxShape.circle,
-                                image: DecorationImage(
-                                image: AssetImage('assets/images/human.jpg'),
-                                ),
-                              ),
-                            ),
-                          ),
-                        ),
                       ],
                     );
                   }),
                 ),
-                SizedBox(
-                  height: 25,
+                const SizedBox(
+                  height: 100,
                 ),
-                
                 Container(
                   height: height * 0.06,
                   width: width ,
@@ -172,32 +142,28 @@ class ProfilePage extends StatelessWidget {
                     borderRadius: BorderRadius.circular(30),
                     color: Colors.white,
                   ),
-                  
                   child: ListTile(
                     leading: Container(
-                      height: 50,
-                      width: 50,
+                      height: 46,
+                      width: 46,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(100),
                         color: Colors.red[100],
                       ),
                       child: IconButton(onPressed: (){
                         Navigator.pushNamed(context, '/biography');
-                      },icon: Icon(LineAwesomeIcons.user),
+                      },icon: const Icon(LineAwesomeIcons.user),
                     ),
-                      
                     ),
-                    title: Text(
+                    title: const Text(
                       'Biography'
                     ),
-                    ),
-                    ),
-                  
-                
-                  SizedBox(
+                  ),
+                ),
+                  const SizedBox(
                       height: 20,
-              ),
-                Container(
+                    ),
+                  Container(
                   height: height * 0.06,
                   width: width,
                   decoration: BoxDecoration(
@@ -207,8 +173,8 @@ class ProfilePage extends StatelessWidget {
                   
                   child: ListTile(
                     leading: Container(
-                      height: 50,
-                      width: 50,
+                      height: 46,
+                      width: 46,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(100),
                         color: Colors.red[100],
@@ -218,14 +184,12 @@ class ProfilePage extends StatelessWidget {
                       },icon: Icon(Icons.phone),
                     ),
                     ),
-                    title: Text(
+                    title: const Text(
                       'Contacts'
                     ),
-                    
                 ),
               ),
-                
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 Container(
@@ -237,10 +201,9 @@ class ProfilePage extends StatelessWidget {
                   ),
                   
                   child: ListTile(
-                    
                     leading: Container(
-                      width: 50,
-                      height: 50,
+                      width: 46,
+                      height: 46,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(100),
                         color: Colors.red[100],
@@ -249,10 +212,10 @@ class ProfilePage extends StatelessWidget {
                         Navigator.push(context,
                 MaterialPageRoute(builder: (context)=> LoginPage(title: '',)),
                 );
-                      }, icon: Icon(Icons.logout,),
+                      }, icon: const Icon(Icons.logout,),
                     ),
                   ),
-                    title: Text(
+                    title: const Text(
                       'Logout'
                     ),
                     textColor: Colors.red,

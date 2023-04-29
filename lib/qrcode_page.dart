@@ -19,10 +19,6 @@ class _qrcode_pageState extends State<qrcode_page> {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: <Widget> [
-            Text("Your Student ID : $data", 
-            style: const TextStyle(fontSize: 24,),
-            ),
-            const SizedBox(height: 16,),
             QrImage(data:
                data,
                gapless: true,

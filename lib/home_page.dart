@@ -53,11 +53,13 @@ class _HomePageState extends State<HomePage> {
               leading: Image.asset('assets/images/Bike_info.png',
                   height: 100.0, width: 100.0, fit: BoxFit.contain),
               title: const Text(
-                "Classic Bicycle",
+                "Electric Bike",
                 textAlign: TextAlign.center,
               ),
               subtitle: const Text(
-                "No basket",
+                'Available', style: TextStyle(
+                  color: Color.fromARGB(255, 64, 221, 69)
+                ),
                 textAlign: TextAlign.center,
               ),
               onTap: () {
@@ -77,11 +79,13 @@ class _HomePageState extends State<HomePage> {
               leading: Image.asset('assets/images/Bike_info1.png',
                   height: 100.0, width: 100.0, fit: BoxFit.contain),
               title: const Text(
-                "Classic Bicycle",
+                "Classic Bike",
                 textAlign: TextAlign.center,
               ),
               subtitle: const Text(
-                "No basket",
+                'Available', style: TextStyle(
+                  color:  Color.fromARGB(255, 64, 221, 69)
+                ),
                 textAlign: TextAlign.center,
               ),
               onTap: () {
@@ -101,12 +105,14 @@ class _HomePageState extends State<HomePage> {
               leading: Image.asset('assets/images/Bike_info2.png',
                   height: 100.0, width: 100.0, fit: BoxFit.contain),
               title: const Text(
-                "Classic Bicycle",
+              "City Bike",
                 textAlign: TextAlign.center,
               ),
               subtitle: const Text(
-                "No basket",
-                textAlign: TextAlign.center,
+               'Available', style: TextStyle(
+                  color:  Color.fromARGB(255, 64, 221, 69)
+                ),
+               textAlign: TextAlign.center,
               ),
               onTap: () {
                 // Add your navigation code here
@@ -125,11 +131,13 @@ class _HomePageState extends State<HomePage> {
               leading: Image.asset('assets/images/Bike_info3.png',
                   height: 100.0, width: 100.0, fit: BoxFit.contain),
               title: const Text(
-                "Classic Bicycle",
+                "Classic Bike",
                 textAlign: TextAlign.center,
               ),
               subtitle: const Text(
-                "No basket",
+              'Available', style: TextStyle(
+                 color:  Color.fromARGB(255, 64, 221, 69)
+                ),
                 textAlign: TextAlign.center,
               ),
               onTap: () {
@@ -149,11 +157,13 @@ class _HomePageState extends State<HomePage> {
               leading: Image.asset('assets/images/Bike_info4.png',
                   height: 100.0, width: 100.0, fit: BoxFit.contain),
               title: const Text(
-                "Classic Bicycle",
+                "Classic Bike",
                 textAlign: TextAlign.center,
               ),
               subtitle: const Text(
-                "No basket",
+                'Available', style: TextStyle(
+                  color:  Color.fromARGB(255, 64, 221, 69)
+                ),
                 textAlign: TextAlign.center,
               ),
               onTap: () {
@@ -173,11 +183,13 @@ class _HomePageState extends State<HomePage> {
               leading: Image.asset('assets/images/Bike_info5.png',
                   height: 100.0, width: 100.0, fit: BoxFit.contain),
               title: const Text(
-                "Classic Bicycle",
+                "Hybrid Bikes",
                 textAlign: TextAlign.center,
               ),
               subtitle: const Text(
-                "No basket",
+                'Available', style: TextStyle(
+                  color:  Color.fromARGB(255, 64, 221, 69)
+                ),
                 textAlign: TextAlign.center,
               ),
               onTap: () {
@@ -197,11 +209,13 @@ class _HomePageState extends State<HomePage> {
               leading: Image.asset('assets/images/Bike_info6.png',
                   height: 100.0, width: 100.0, fit: BoxFit.contain),
               title: const Text(
-                "Classic Bicycle",
+                "Classic Bike",
                 textAlign: TextAlign.center,
               ),
               subtitle: const Text(
-                "No basket",
+                'Available', style: TextStyle(
+                  color:  Color.fromARGB(255, 64, 221, 69)
+                ),
                 textAlign: TextAlign.center,
               ),
               onTap: () {
@@ -221,11 +235,13 @@ class _HomePageState extends State<HomePage> {
               leading: Image.asset('assets/images/Bike_info7.png',
                   height: 100.0, width: 100.0, fit: BoxFit.contain),
               title: const Text(
-                "Classic Bicycle",
+                "Mountain Bike",
                 textAlign: TextAlign.center,
               ),
               subtitle: const Text(
-                "No basket",
+                'Available', style: TextStyle(
+                  color:  Color.fromARGB(255, 64, 221, 69)
+                ),
                 textAlign: TextAlign.center,
               ),
               onTap: () {
@@ -233,30 +249,6 @@ class _HomePageState extends State<HomePage> {
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => bike_info_page7()),
-                );
-              },
-            ),
-          ),
-          Container(
-            height: 100,
-            decoration: BoxDecoration(
-                border: Border.all(width: 0.5, color: Colors.white)),
-            child: ListTile(
-              leading: Image.asset('assets/images/Bike_info1.png',
-                  height: 100.0, width: 100.0, fit: BoxFit.contain),
-              title: const Text(
-                "Classic Bicycle",
-                textAlign: TextAlign.center,
-              ),
-              subtitle: const Text(
-                "No basket",
-                textAlign: TextAlign.center,
-              ),
-              onTap: () {
-                // Add your navigation code here
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => bike_info_page1()),
                 );
               },
             ),
