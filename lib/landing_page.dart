@@ -24,9 +24,9 @@ class _LandingPageState extends State<LandingPage> {
           children: [
             const SizedBox(height: 1.0),
             const Text(
-              'Cycle Bike MFU ',
+              'Cycle Buddy MFU ',
               style: TextStyle(
-                fontSize: 38.0,
+                fontSize: 35.0,
                 fontWeight: FontWeight.bold,
                 color: Colors.white,
               ),

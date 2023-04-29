@@ -4,6 +4,13 @@ import 'package:cycle_bike_mfu/qrcode_page.dart';
 import 'package:flutter/material.dart';
 import 'package:cycle_bike_mfu/bike_info_page.dart';
 import 'package:cycle_bike_mfu/bike_info_page1.dart';
+import 'package:cycle_bike_mfu/bike_info_page2.dart';
+import 'package:cycle_bike_mfu/bike_info_page3.dart';
+import 'package:cycle_bike_mfu/bike_info_page4.dart';
+import 'package:cycle_bike_mfu/bike_info_page5.dart';
+import 'package:cycle_bike_mfu/bike_info_page6.dart';
+import 'package:cycle_bike_mfu/bike_info_page7.dart';
+
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -43,7 +50,31 @@ class _HomePageState extends State<HomePage> {
             decoration: BoxDecoration(
                 border: Border.all(width: 0.5, color: Colors.white)),
             child: ListTile(
-              leading: Image.asset("assets/images/Bike1.png",
+              leading: Image.asset('assets/images/Bike_info.png',
+                  height: 100.0, width: 100.0, fit: BoxFit.contain),
+              title: const Text(
+                "Classic Bicycle",
+                textAlign: TextAlign.center,
+              ),
+              subtitle: const Text(
+                "No basket",
+                textAlign: TextAlign.center,
+              ),
+              onTap: () {
+                // Add your navigation code here
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => BikeInfoPage()),
+                );
+              },
+            ),
+          ),
+          Container(
+            height: 100,
+            decoration: BoxDecoration(
+                border: Border.all(width: 0.5, color: Colors.white)),
+            child: ListTile(
+              leading: Image.asset('assets/images/Bike_info1.png',
                   height: 100.0, width: 100.0, fit: BoxFit.contain),
               title: const Text(
                 "Classic Bicycle",
@@ -67,7 +98,151 @@ class _HomePageState extends State<HomePage> {
             decoration: BoxDecoration(
                 border: Border.all(width: 0.5, color: Colors.white)),
             child: ListTile(
-              leading: Image.asset("assets/images/Bike1.jpg",
+              leading: Image.asset('assets/images/Bike_info2.png',
+                  height: 100.0, width: 100.0, fit: BoxFit.contain),
+              title: const Text(
+                "Classic Bicycle",
+                textAlign: TextAlign.center,
+              ),
+              subtitle: const Text(
+                "No basket",
+                textAlign: TextAlign.center,
+              ),
+              onTap: () {
+                // Add your navigation code here
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => bike_info_page2()),
+                );
+              },
+            ),
+          ),
+          Container(
+            height: 100,
+            decoration: BoxDecoration(
+                border: Border.all(width: 0.5, color: Colors.white)),
+            child: ListTile(
+              leading: Image.asset('assets/images/Bike_info3.png',
+                  height: 100.0, width: 100.0, fit: BoxFit.contain),
+              title: const Text(
+                "Classic Bicycle",
+                textAlign: TextAlign.center,
+              ),
+              subtitle: const Text(
+                "No basket",
+                textAlign: TextAlign.center,
+              ),
+              onTap: () {
+                // Add your navigation code here
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => bike_info_page3()),
+                );
+              },
+            ),
+          ),
+          Container(
+            height: 100,
+            decoration: BoxDecoration(
+                border: Border.all(width: 0.5, color: Colors.white)),
+            child: ListTile(
+              leading: Image.asset('assets/images/Bike_info4.png',
+                  height: 100.0, width: 100.0, fit: BoxFit.contain),
+              title: const Text(
+                "Classic Bicycle",
+                textAlign: TextAlign.center,
+              ),
+              subtitle: const Text(
+                "No basket",
+                textAlign: TextAlign.center,
+              ),
+              onTap: () {
+                // Add your navigation code here
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => bike_info_page4()),
+                );
+              },
+            ),
+          ),
+          Container(
+            height: 100,
+            decoration: BoxDecoration(
+                border: Border.all(width: 0.5, color: Colors.white)),
+            child: ListTile(
+              leading: Image.asset('assets/images/Bike_info5.png',
+                  height: 100.0, width: 100.0, fit: BoxFit.contain),
+              title: const Text(
+                "Classic Bicycle",
+                textAlign: TextAlign.center,
+              ),
+              subtitle: const Text(
+                "No basket",
+                textAlign: TextAlign.center,
+              ),
+              onTap: () {
+                // Add your navigation code here
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => bike_info_page5()),
+                );
+              },
+            ),
+          ),
+          Container(
+            height: 100,
+            decoration: BoxDecoration(
+                border: Border.all(width: 0.5, color: Colors.white)),
+            child: ListTile(
+              leading: Image.asset('assets/images/Bike_info6.png',
+                  height: 100.0, width: 100.0, fit: BoxFit.contain),
+              title: const Text(
+                "Classic Bicycle",
+                textAlign: TextAlign.center,
+              ),
+              subtitle: const Text(
+                "No basket",
+                textAlign: TextAlign.center,
+              ),
+              onTap: () {
+                // Add your navigation code here
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => bike_info_page6()),
+                );
+              },
+            ),
+          ),
+          Container(
+            height: 100,
+            decoration: BoxDecoration(
+                border: Border.all(width: 0.5, color: Colors.white)),
+            child: ListTile(
+              leading: Image.asset('assets/images/Bike_info7.png',
+                  height: 100.0, width: 100.0, fit: BoxFit.contain),
+              title: const Text(
+                "Classic Bicycle",
+                textAlign: TextAlign.center,
+              ),
+              subtitle: const Text(
+                "No basket",
+                textAlign: TextAlign.center,
+              ),
+              onTap: () {
+                // Add your navigation code here
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => bike_info_page7()),
+                );
+              },
+            ),
+          ),
+          Container(
+            height: 100,
+            decoration: BoxDecoration(
+                border: Border.all(width: 0.5, color: Colors.white)),
+            child: ListTile(
+              leading: Image.asset('assets/images/Bike_info1.png',
                   height: 100.0, width: 100.0, fit: BoxFit.contain),
               title: const Text(
                 "Classic Bicycle",
@@ -82,174 +257,6 @@ class _HomePageState extends State<HomePage> {
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => bike_info_page1()),
-                );
-              },
-            ),
-          ),
-          Container(
-            height: 100,
-            decoration: BoxDecoration(
-                border: Border.all(width: 0.5, color: Colors.white)),
-            child: ListTile(
-              leading: Image.asset("assets/images/Bike2.png",
-                  height: 100.0, width: 100.0, fit: BoxFit.contain),
-              title: const Text(
-                "Classic Bicycle",
-                textAlign: TextAlign.center,
-              ),
-              subtitle: const Text(
-                "No basket",
-                textAlign: TextAlign.center,
-              ),
-              onTap: () {
-                // Add your navigation code here
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => BikeInfoPage()),
-                );
-              },
-            ),
-          ),
-          Container(
-            height: 100,
-            decoration: BoxDecoration(
-                border: Border.all(width: 0.5, color: Colors.white)),
-            child: ListTile(
-              leading: Image.asset("assets/images/Bike2.png",
-                  height: 100.0, width: 100.0, fit: BoxFit.contain),
-              title: const Text(
-                "Classic Bicycle",
-                textAlign: TextAlign.center,
-              ),
-              subtitle: const Text(
-                "No basket",
-                textAlign: TextAlign.center,
-              ),
-              onTap: () {
-                // Add your navigation code here
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => BikeInfoPage()),
-                );
-              },
-            ),
-          ),
-          Container(
-            height: 100,
-            decoration: BoxDecoration(
-                border: Border.all(width: 0.5, color: Colors.white)),
-            child: ListTile(
-              leading: Image.asset("assets/images/Bike2.png",
-                  height: 100.0, width: 100.0, fit: BoxFit.contain),
-              title: const Text(
-                "Classic Bicycle",
-                textAlign: TextAlign.center,
-              ),
-              subtitle: const Text(
-                "No basket",
-                textAlign: TextAlign.center,
-              ),
-              onTap: () {
-                // Add your navigation code here
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => BikeInfoPage()),
-                );
-              },
-            ),
-          ),
-          Container(
-            height: 100,
-            decoration: BoxDecoration(
-                border: Border.all(width: 0.5, color: Colors.white)),
-            child: ListTile(
-              leading: Image.asset("assets/images/Bike2.png",
-                  height: 100.0, width: 100.0, fit: BoxFit.contain),
-              title: const Text(
-                "Classic Bicycle",
-                textAlign: TextAlign.center,
-              ),
-              subtitle: const Text(
-                "No basket",
-                textAlign: TextAlign.center,
-              ),
-              onTap: () {
-                // Add your navigation code here
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => BikeInfoPage()),
-                );
-              },
-            ),
-          ),
-          Container(
-            height: 100,
-            decoration: BoxDecoration(
-                border: Border.all(width: 0.5, color: Colors.white)),
-            child: ListTile(
-              leading: Image.asset("assets/images/Bike2.png",
-                  height: 100.0, width: 100.0, fit: BoxFit.contain),
-              title: const Text(
-                "Classic Bicycle",
-                textAlign: TextAlign.center,
-              ),
-              subtitle: const Text(
-                "No basket",
-                textAlign: TextAlign.center,
-              ),
-              onTap: () {
-                // Add your navigation code here
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => BikeInfoPage()),
-                );
-              },
-            ),
-          ),
-          Container(
-            height: 100,
-            decoration: BoxDecoration(
-                border: Border.all(width: 0.5, color: Colors.white)),
-            child: ListTile(
-              leading: Image.asset("assets/images/Bike2.png",
-                  height: 100.0, width: 100.0, fit: BoxFit.contain),
-              title: const Text(
-                "Classic Bicycle",
-                textAlign: TextAlign.center,
-              ),
-              subtitle: const Text(
-                "No basket",
-                textAlign: TextAlign.center,
-              ),
-              onTap: () {
-                // Add your navigation code here
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => BikeInfoPage()),
-                );
-              },
-            ),
-          ),
-          Container(
-            height: 100,
-            decoration: BoxDecoration(
-                border: Border.all(width: 0.5, color: Colors.white)),
-            child: ListTile(
-              leading: Image.asset("assets/images/Bike3.png",
-                  height: 100.0, width: 100.0, fit: BoxFit.contain),
-              title: const Text(
-                "Classic Bicycle",
-                textAlign: TextAlign.center,
-              ),
-              subtitle: const Text(
-                "No basket",
-                textAlign: TextAlign.center,
-              ),
-              onTap: () {
-                // Add your navigation code here
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => BikeInfoPage()),
                 );
               },
             ),

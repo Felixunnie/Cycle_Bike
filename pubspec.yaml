@@ -62,10 +62,13 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/images/Bike_info.png
-    - assets/images/Bike.png
-    - assets/images/Bike1.png
-    - assets/images/Bike2.png
-    - assets/images/Bike3.png
+    - assets/images/Bike_info1.png
+    - assets/images/Bike_info2.png
+    - assets/images/Bike_info3.png
+    - assets/images/Bike_info4.png
+    - assets/images/Bike_info5.png
+    - assets/images/Bike_info6.png
+    - assets/images/Bike_info7.png
     - assets/images/human.jpg
     - assets/images/mfu_logo.png
 
