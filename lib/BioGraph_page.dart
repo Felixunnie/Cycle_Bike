@@ -24,7 +24,7 @@ class BiographyPage extends StatelessWidget {
         Scaffold(
           backgroundColor: Colors.transparent,
           body: SingleChildScrollView(
-            padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 38),
+            padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 70),
             child: Column(
               children:[
                 Row(
@@ -47,7 +47,7 @@ class BiographyPage extends StatelessWidget {
                   height: 20,
                 ),
                 Container(
-                  height: height * 0.4,
+                  height: height * 0.20,
                   child: LayoutBuilder(builder: (context, constraints){
                     double innerHeight = constraints.maxHeight;
                     double innerWidth = constraints.maxWidth;
@@ -59,7 +59,7 @@ class BiographyPage extends StatelessWidget {
                           left: 0,
                           right: 0,
                           child: Container(
-                            height: innerHeight * 0.65,
+                            height: innerHeight * 0.55,
                             width: innerWidth,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(30),
@@ -68,15 +68,7 @@ class BiographyPage extends StatelessWidget {
                             child: Column(
                               children: [
                                 const SizedBox(
-                                  height: 70,
-                                ),
-                                const Text(
-                                  'Chuming Lin',
-                                  style: TextStyle(
-                                    color: Color.fromRGBO(39, 105, 171, 1),
-                                    fontFamily: 'Nunito',
-                                    fontSize: 40,
-                                  ),
+                                  height: 12,
                                 ),
                                 const SizedBox(
                                   height: 10,
@@ -136,21 +128,11 @@ class BiographyPage extends StatelessWidget {
                             ),
                           ),
                         ),
-                        Positioned(
+                        const Positioned(
                           top: 0,
                           left: 0,
                           right: 0,
                           child: Center(
-                            child: Container(
-                              margin: const EdgeInsets.only(bottom: 10),
-                              height: 180,
-                              decoration: const BoxDecoration(
-                                shape: BoxShape.circle,
-                                image: DecorationImage(
-                                image: AssetImage('assets/images/human.jpg'),
-                                ),
-                              ),
-                            ),
                           ),
                         ),
                       ],
@@ -158,7 +140,7 @@ class BiographyPage extends StatelessWidget {
                   }),
                 ),
                 const SizedBox(
-                  height: 25,
+                  height: 10,
                 ),
                 Container(
                   height: height * 0.65,

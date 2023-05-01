@@ -50,7 +50,6 @@ class ContactPage extends StatelessWidget {
                 const SizedBox(
                   height: 20,
                 ),
-                
                 Container(
                   height: 500,
                   width: width ,
@@ -104,7 +103,7 @@ class ContactPage extends StatelessWidget {
                           height: 5,
                         ),
                         const Text(
-                          '      Registrar Division, Mae Fah Luang University AS \n      Building, 1st floor, Room 107 and 108 333 Moo 1, Thasud, Muang, Chiang Rai 57100'
+                          ' RegistrarDivision, Mae Fah Luang University \n AS Building,1st floor, Room 107 and 108 333 \n Moo1, Thasud, Muang, Chiang Rai 57100'
                         ),
                         
                         Container(
