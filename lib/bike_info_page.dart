@@ -1,4 +1,5 @@
 import 'package:cycle_bike_mfu/Home_main.dart';
+import 'package:cycle_bike_mfu/bookings_page.dart';
 import 'package:flutter/material.dart';
 
 
@@ -176,7 +177,7 @@ class _BikeInfoPageState extends State<BikeInfoPage> {
                     child :GestureDetector(
                       onTap:(){
                         Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => const Home_main())
+                        MaterialPageRoute(builder: (context) => const BookingPage())
                         );
                       },
                     child: const Text(

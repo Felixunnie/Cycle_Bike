@@ -14,7 +14,7 @@ class _LandingPageState extends State<LandingPage> {
       body: Container(
         decoration: const BoxDecoration(
           image: DecorationImage(
-            image: AssetImage('assets/Landing.JPG'),
+            image: AssetImage('assets/images/Landing.jpg'),
             fit: BoxFit.cover,
           ),
         ),
