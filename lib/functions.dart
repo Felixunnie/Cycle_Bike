@@ -11,7 +11,6 @@ class AnimatedButton extends StatefulWidget {
   @override
   _AnimatedButtonState createState() => _AnimatedButtonState();
 }
-
 class _AnimatedButtonState extends State<AnimatedButton> {
   bool _isPressed = false;
 
@@ -52,53 +51,6 @@ class _AnimatedButtonState extends State<AnimatedButton> {
           ),
         ),
       ),
-    );
-  }
-}
-
-//Complete and cancel button
-class ToggleWidget extends StatefulWidget {
-  const ToggleWidget({Key? key}) : super(key: key);
-
-  @override
-  _ToggleWidgetState createState() => _ToggleWidgetState();
-}
-
-class _ToggleWidgetState extends State<ToggleWidget> {
-  bool _isComplete = false;
-
-  void _toggleStatus() {
-    setState(() {
-      _isComplete = !_isComplete;
-    });
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        Container(
-           height: 70.0,
-            width: 200.0,
-            decoration: BoxDecoration(border: Border.all(width: 1.0,color: Colors.black)),
-          
-          child: GestureDetector(
-              onTap: () {
-                _toggleStatus();
-              },
-              child: Padding(
-                padding: const EdgeInsets.only(top: 20.0,bottom: 20.0),
-                child: Text(
-                  _isComplete ? "Cancelled" : "Completed",
-                  style: const TextStyle(color: Colors.green, fontSize: 24.0),
-                  textAlign: TextAlign.center,
-                ),
-              ),
-            ),
-          
-        ),
-      ],
     );
   }
 }
