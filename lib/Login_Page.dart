@@ -16,7 +16,9 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
+      body: SingleChildScrollView(
+        reverse: true,
+        child: Center (
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
@@ -91,17 +93,18 @@ class _LoginPageState extends State<LoginPage> {
               style: TextStyle(fontWeight: FontWeight.normal),
             ),
            Container(
-  height: 80.0,
-  width: 80.0,
-  alignment: Alignment.center,
-  padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 16),
-  child: Container(
-    height: 60.0,
-    width: 60.0,
-    decoration: BoxDecoration(
-      shape: BoxShape.circle,
-      color: Colors.grey.withOpacity(0.2),
+             height: 80.0,
+             width: 80.0,
+             alignment: Alignment.center,
+             padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 16),
+            child: Container(
+            height: 60.0,
+             width: 60.0,
+            decoration: BoxDecoration(
+            shape: BoxShape.circle,
+           color: Colors.grey.withOpacity(0.2),
     ),
+            
     child: GestureDetector(
       onTap: () {
        // Handle onTap event here
@@ -118,6 +121,7 @@ class _LoginPageState extends State<LoginPage> {
           ],
         ),
       ),
+      )
     );
   }
 }

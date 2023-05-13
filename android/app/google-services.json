@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "726796630238",
+    "project_id": "cycle-buddy-mfu-app",
+    "storage_bucket": "cycle-buddy-mfu-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:726796630238:android:5c6843452612a14a8cea4f",
+        "android_client_info": {
+          "package_name": "com.example.cycle_bike_mfu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "726796630238-gdqrqcg1ff7k5j3sf6r8vj4lqqrdekgv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0HtFhNqJxqVEaV8znP7HU0HnhYrjAJbM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "726796630238-gdqrqcg1ff7k5j3sf6r8vj4lqqrdekgv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
